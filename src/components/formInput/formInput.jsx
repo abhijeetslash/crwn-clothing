@@ -7,7 +7,7 @@ const formInput = props => {
 
     return (
         <div className='group'>
-            <input className='form-input' type="text" onChange={handleChange}/>
+            <input className='form-input' {...otherInputProps} onChange={handleChange}/>
             {
                 label ? 
             (<label className={`${otherInputProps.value ? `shrink`:''} form-input-label`}>{label}</label>)
